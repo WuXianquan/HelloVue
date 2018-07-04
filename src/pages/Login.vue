@@ -17,7 +17,8 @@
               </el-form-item>
               <el-form-item class="loginParam">
                 <el-checkbox v-model="form.isAuth" style="float: left;">下次自动登录</el-checkbox>
-                <a href="https://www.baidu.com/">忘记密码</a>
+                <router-link to="/findBack">忘记密码</router-link>
+                <router-link to="/register">注册用户</router-link>
               </el-form-item>
               <el-form-item>
                 <el-button class="loginButton" type="primary" plain v-on:click="login">登录</el-button>
@@ -27,6 +28,8 @@
         </div>
       </el-col>
     </el-row>
+    <!--<router-view name="findBack"></router-view>-->
+    <router-view></router-view>
   </div>
 </template>
 
